@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hai cantikkkkkk</h1>
+    <img src="https://media2.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif?cid=ecf05e47e6bebf50c47ea270f460b06ec55a936dd725200b&amp;rid=giphy.gif&amp;ct=g" />
+    <h1>maafin aku yaa</h1>
+    <button id="btn_mau" onclick='alert("I <3 U")'>MAU</button>
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">GAMAU</button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 300) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
